@@ -10,6 +10,7 @@ source:
   # sha256: aef60a99f75be5d45226a1fd6aabe5526d78d6dbca0f578c45b0c5bc198d9513
 
 build:
+
   script: "{{ PYTHON }} -m pip install ./workflow_PlasMAAG/ -vv"
 
 requirements:
