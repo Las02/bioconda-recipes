@@ -1,5 +1,5 @@
 {% set name = "PlasMAAG" %}
-{% set version = "0.0.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,9 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/plasmaag-core/plasmaag_core-{{ version }}.tar.gz
-  # sha256: 9b57b1356a5ddaadefdd6aa3070bf4feae4a2548e9bac0c7e8716227722dfd51
+  sha256: 040ccfc56ac6592acd8698b94cd1e7fca214699f902ef4a5e841174787b71eab
 
 build:
-  skip: true  # [py>=314 or py2k]
   entry_points:
     - PlasMAAG = PlasMAAG.__main__:main
     - vamb = vamb.__main__:main
